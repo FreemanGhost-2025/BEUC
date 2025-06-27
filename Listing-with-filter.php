@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-class RL_Listing_With_Filter {
+class FG_Listing_With_Filter {
 
     public static function init() {
         add_action( 'init',               [ __CLASS__, 'register_cpts'   ] );
@@ -80,7 +80,7 @@ class RL_Listing_With_Filter {
 }
 
 // initialise tout
-RL_Listing_With_Filter::init();
+FG_Listing_With_Filter::init();
 
 // on inclut la logique complète dans un fichier séparé si tu préfères
 require_once plugin_dir_path( __FILE__ ) . 'includes/shortcode.php';
