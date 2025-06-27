@@ -72,7 +72,7 @@ class FG_Listing_With_Filter {
     public static function rl_afficher_liste_filtre( $atts ) {
         // ... tout le code de filtrage et d'affichage que tu avais dans rl_afficher_liste_restaurants ...
         // par exemple :
-        $atts = shortcode_atts( [ 'type' => 'test' ], $atts, 'iste_plugins_test' );
+        $atts = shortcode_atts( [ 'type' => 'test' ], $atts, 'liste_plugins_test' );
         $post_type = sanitize_key( $atts['type'] );
         // etc...
         // n’oublie pas le return ob_get_clean();
@@ -88,3 +88,4 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/shortcode.php';
 
 // Ajout du filtre par catégorie
 include_once plugin_dir_path(__FILE__) . 'includes/filters/category-filter.php';
+
