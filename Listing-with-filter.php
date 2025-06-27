@@ -12,6 +12,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/FreemanGhost-2025/BEUC
 GitHub Branch: main
 */
+# Forcer LF dans tous les fichiers PHP, JS, CSS…
+*.php text eol=lf
+*.js  text eol=lf
+*.css text eol=lf
+
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
