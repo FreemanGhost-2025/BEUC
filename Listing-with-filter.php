@@ -28,7 +28,7 @@ class RL_Listing_With_Filter {
         add_action( 'init',               [ __CLASS__, 'register_cpts'   ] );
         add_action( 'wp_enqueue_scripts', [ __CLASS__, 'enqueue_styles' ] );
         // on change ici pour pointer vers rl_afficher_liste
-        add_shortcode( 'liste_test_plugins', [ __CLASS__, 'rl_afficher_liste' ] );
+        add_shortcode( 'liste_plugins_test', [ __CLASS__, 'rl_afficher_liste_filtre' ] );
     }
 
     public static function enqueue_styles() {
@@ -65,14 +65,14 @@ class RL_Listing_With_Filter {
 
     // on inclut le shortcode (le rendu est désormais dans rl_afficher_liste)
     public static function render_shortcode( $atts ) {
-        return self::rl_afficher_liste( $atts );
+        return self::rl_afficher_liste_filtre( $atts );
     }
 
     // ici on définit la fonction renommée
-    public static function rl_afficher_liste( $atts ) {
+    public static function rl_afficher_liste_filtre( $atts ) {
         // ... tout le code de filtrage et d'affichage que tu avais dans rl_afficher_liste_restaurants ...
         // par exemple :
-        $atts = shortcode_atts( [ 'type' => 'test' ], $atts, 'liste_test_plugins' );
+        $atts = shortcode_atts( [ 'type' => 'test' ], $atts, 'iste_plugins_test' );
         $post_type = sanitize_key( $atts['type'] );
         // etc...
         // n’oublie pas le return ob_get_clean();
