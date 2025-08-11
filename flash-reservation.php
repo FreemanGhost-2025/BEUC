@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Flash Reservation
- * Plugin URI: https://github.com/FreemanGhost-2025/Flash
+ * Plugin URI: https://github.com/FreemanGhost-2025/BEUC
  * Description: Plugin de réservation (bus, apparts, vols, événements). Intègre shortcodes et widgets Elementor. Fournit CPTs, endpoints REST, admin calendar et stubs paiement.
  * Version:     0.1.1
  * Author:      Ghost
@@ -10,7 +10,7 @@
  * License: GPL2
  * Author URI: https://github.com/FreemanGhost-2025
  * Domain Path: /languages
- * GitHub Plugin URI: https://github.com/FreemanGhost-2025/Flash
+ * GitHub Plugin URI: https://github.com/FreemanGhost-2025/BEUC
  * GitHub Branch: main
  */
 
@@ -81,3 +81,4 @@ register_deactivation_hook( __FILE__, function() {
 } );
 
 Flash_Reservation_Plugin::init();
+
