@@ -1,3 +1,4 @@
+<?php
 // Dans ton plugin Flash Reservation
 add_action('init', function() {
     register_post_type('reservation', [
