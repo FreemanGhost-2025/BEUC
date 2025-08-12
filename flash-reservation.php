@@ -156,6 +156,10 @@ register_deactivation_hook( __FILE__, function() {
     flush_rewrite_rules();
 } );
 
+require_once __DIR__ . '/includes/cpt-reservation.php';
+require_once __DIR__ . '/includes/api-reservation.php';
+
 Flash_Reservation_Plugin::init();
+
 
 
